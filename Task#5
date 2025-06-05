@@ -1,0 +1,26 @@
+<html>
+    <body>
+      <button id ="b1">clik me</button>
+      <p id ="p1"></p>
+      <script>
+        let arr1 =new Array(100);
+        let sum =0;
+        function calculatesum(){
+           for (let i=0 ;i<=100;i++){
+            arr1.push(i);
+            if (i%2==0)
+            sum +=i;
+           }
+           document.getElementById("p1").innerHTML=sum; 
+        }
+        function start(){
+           document.getElementById("b1").addEventListener("click",calculatesum,false);
+               
+
+        }
+        window.addEventListener("load",start,false);
+      </script>
+
+
+    </body>
+</html>
