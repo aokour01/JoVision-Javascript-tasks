@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>assign 4</title>
+<script>
+var arr1= new Array(100);
+var sum=0;
+for(var i=0 ;i<100;i++){
+arr1[i] = i;
+sum +=arr1[i];
+}
+function display(){
+    document.getElementById("demo").innerHTML=sum;
+}
+function start(){
+var butn =document.getElementById("b1");
+butn.addEventListener("click",display,false);}
+window.addEventListener("load",start,false);
+</script>
+</head>
+<body>
+<button id="b1">click me</button>
+<p id ="demo"></p>
+</body>
+</html>
