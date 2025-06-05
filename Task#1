@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>assigm 1</title>
+</head>
+<body>
+<button id="b1"  >click me</button>
+<script>
+    var event1 = document.getElementById("b1");
+    event1.addEventListener("click",click1,false);
+    function click1(){
+         var  sb = document.getElementById("demo").innerHTML="hello world";
+        
+     }      
+ </script>
+<p id ="demo"></p>
+</body>
+</html>
